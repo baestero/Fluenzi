@@ -14,4 +14,3 @@ Ela permite o controle e acompanhamento de turmas, alunos, professores, horário
 - **React**
 - **Vite**
 
----
