@@ -1,0 +1,15 @@
+.menuBox {
+  display: grid;
+  grid-row: 2fr 1fr;
+  gap: 30px;
+  background: #fff;
+  width: 400px;
+  height: 200px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}

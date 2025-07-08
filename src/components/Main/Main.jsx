@@ -1,30 +1,38 @@
 import React from "react";
 import styles from "./Main.module.css";
-import Button from "../Button/Button";
-
+import { NavLink } from "react-router-dom";
+import Box from "./Box";
 const Main = () => {
   return (
     <main className={styles.mainContainer}>
-      <div className={styles.menuBox}>
-        <div>
-          <h2 className={styles.tittle}>Gerenciamento de Estudantes</h2>
-          <p>Gerencie registros e informações de estudantes</p>
-        </div>
-        <Button text={"Acessar"} />
+      <div className={styles.menuBox + " animeLeft"}>
+        <Box
+          title={"Gerenciamento de Estudantes"}
+          subtitle={"Gerencie registros e informações de estudantes"}
+        />
+        <NavLink to={"/gerenciamento-de-estudantes"}>
+          <button className={styles.buttonGeral}>Acessar</button>
+        </NavLink>
       </div>
-      <div className={styles.menuBox}>
-        <div>
-          <h2 className={styles.tittle}>Agendamentos do Estudante</h2>
-          <p>Visualize os horarios dos estudantes</p>
-        </div>
-        <Button text={"Acessar"} />
+
+      <div className={styles.menuBox + " animeLeft"}>
+        <Box
+          title={"Agendamentos do Estudante"}
+          subtitle={"Visualize os horarios dos estudantes"}
+        />
+        <NavLink to={"/agendamento-do-estudante"}>
+          <button className={styles.buttonGeral}>Acessar</button>
+        </NavLink>
       </div>
-      <div className={styles.menuBox}>
-        <div>
-          <h2 className={styles.tittle}>Gerenciamento de Professores</h2>
-          <p>Gerencie registros e informações de professores</p>
-        </div>
-        <Button text={"Acessar"} />
+
+      <div className={styles.menuBox + " animeLeft"}>
+        <Box
+          title={"Gerenciamento de Professores"}
+          subtitle={"Gerencie registros e informações de professores"}
+        />
+        <NavLink to={"/gerenciamento-de-professores"}>
+          <button className={styles.buttonGeral}>Acessar</button>
+        </NavLink>
       </div>
     </main>
   );

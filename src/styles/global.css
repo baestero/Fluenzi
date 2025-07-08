@@ -9,16 +9,13 @@ body {
   background: #d9eeff;
 }
 
-.appContainer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 main {
   flex: 1;
 }
 
 p {
   font-size: 0.85rem;
+}
+a {
+  text-decoration: none;
 }

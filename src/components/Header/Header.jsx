@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className={styles.headerContainer}>
-      <h1>Fluenzi</h1>
-    </div>
+    <NavLink to={"/"}>
+      <div className={styles.headerContainer}>
+        <h1>Fluenzi</h1>
+      </div>
+    </NavLink>
   );
 };
 
